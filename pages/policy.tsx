@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 export default function PolicyPage() {
   return (
     <Layout>
-      <p>
+      {/* <p>
         This is an example site to demonstrate how to setup an oAUTH account using next.js and next-auth.
         <a href="https://next-auth.js.org">NextAuth.js</a> for authentication.
       </p>
@@ -26,7 +26,7 @@ export default function PolicyPage() {
 //         Data provided to this site is exclusively used to support signing in and
 //         is not passed to any third party services, other than via SMTP or OAuth
 //         for the purposes of authentication.
-//       </p>
+//       </p> */}
     </Layout>
    )
  }
