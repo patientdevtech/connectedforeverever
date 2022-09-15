@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { signIn } from "next-auth/react";
+import onClick  from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react"
 
 
 function Login() {
@@ -13,7 +14,7 @@ function Login() {
                 objectFit="contain"
             />
             <h1 
-                onClick={signIn} 
+                // onClick={signIn} 
                 className="p-5 bg-blue-500 rounded-full text-white text-center cursor-pointer"
             >
                 Login with Facebook

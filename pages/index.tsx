@@ -4,8 +4,13 @@ import Header from '../components/Header'
 // import Layout from "../components/Layout"
 import { signIn } from "next-auth/react"
 // import{ GetServerSideProps } from "next-auth/react"
+// import type { ReactChildren } from "react"
 
-export default function Home() {
+interface Props {
+  children: React.ReactNode
+}
+
+export default function Home( {children}: Props) {
   return (
     <div className="h-screen bg-tan-100 overflow-hidden">
     <Head>
@@ -18,7 +23,9 @@ export default function Home() {
       {/* <Sidebar />
       <Feed />
       <Connections /> */}
+       {children}
     </main>
+   
     <button onClick={() => signIn("facebook")}>
       Sign In
     </button>

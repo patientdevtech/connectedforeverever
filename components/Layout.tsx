@@ -1,14 +1,31 @@
 import Header from "./Header"
 
-interface Props {
-  children: React.ReactNode
-}
-
-export default function Layout({ children }: Props) {
+function Layout() {
   return (
-    <>
-      <Header />
-      <main>{children}</main>
-    </>
+    <div>Layout</div>
   )
 }
+
+export default Layout
+// interface Props {
+//   children: React.ReactNode
+// }
+
+// export default function Layout({ children }: Props) {
+//   return (
+//     <>
+//       <Header />
+   
+//     </>
+//   )
+// }
+
+
+// export default function Layout({ children }: Props) {
+//   return (
+//     <>
+//       <Header />
+//       <main>{children}</main>
+//     </>
+//   )
+// }

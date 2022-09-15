@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeaderIcon from "./HeaderIcon";
 
+
 import {
     BellIcon,
     // ChatIcon,
@@ -15,9 +16,10 @@ import {
     SearchIcon,
     // ShoppingCartIcon,
 } from "@heroicons/react/outline";
+import { signOut, useSession } from "next-auth/react";
 
 function Header() {
-    // const [session] = useSession();
+    const Session = useSession();
   return (
     <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
         {/* left */}
@@ -45,7 +47,7 @@ function Header() {
                 {/* <HeaderIcon Icon={FlagIcon} />
                 <HeaderIcon Icon={PlayIcon} />
                 <HeaderIcon Icon={ShoppingCartIcon} /> */}
-                <HeaderIcon Icon={UserGroupIcon} />
+                <HeaderIcon active Icon={UserGroupIcon} />
             </div>
         </div>
     

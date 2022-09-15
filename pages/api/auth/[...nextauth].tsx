@@ -59,21 +59,21 @@ export const authOptions: NextAuthOptions = {
     colorScheme: "light",
   },
   callbacks: {
-    async jwt({ token }) {
-      token.userRole = "admin"
-      return token
+    async session({ session }) {
+      return session
     },
   },
 }
 
-export default NextAuth(authOptions);
- async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  const session = await unstable_getServerSession(req, res, authOptions)
-  res.send(JSON.stringify(session, null, 2))
-}
+export default NextAuth(authOptions) 
+// export default NextAuth(authOptions);
+//  async function handler(
+//   req: NextApiRequest,
+//   res: NextApiResponse
+// ) {
+//   const session = await unstable_getServerSession(req, res, authOptions)
+//   res.send(JSON.stringify(session, null, 2))
+// }
 
 // export default NextAuth(authOptions)
 
