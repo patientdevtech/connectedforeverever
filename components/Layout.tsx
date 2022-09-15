@@ -3,14 +3,14 @@ import Header from "./Header"
 // import type { ReactChildren } from "react"
 
 interface Props {
-  children: React.ReactNode
+  child: React.ReactNode
 }
 
-export default function Layout({ children }: Props) {
+export default function Layout({ child }: Props) {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main>{child}</main>
     </>
   )
 }
