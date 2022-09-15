@@ -1,9 +1,9 @@
 
 import Head from 'next/head';
 import Header from '../components/Header'
-import Layout from "../components/Layout"
+// import Layout from "../components/Layout"
 import { signIn } from "next-auth/react"
-import{ GetServerSideProps } from "next-auth/react"
+// import{ GetServerSideProps } from "next-auth/react"
 
 export default function Home() {
   return (
