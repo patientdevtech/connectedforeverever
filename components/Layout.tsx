@@ -1,16 +1,23 @@
 
-import Header from "./Header"
-// import type { ReactChildren } from "react"
 
-interface Props {
-  child: React.ReactNode
-}
-
-export default function Layout({ child }: Props) {
+const Layout = () => {
   return (
-    <>
-      <Header />
-      <main>{child}</main>
-    </>
+    <div>Layout</div>
   )
 }
+
+export default Layout
+// import Header from "./Header"
+
+// interface Props {
+//   children: React.ReactNode
+// }
+
+// export default function Layout({ children }: Props) {
+//   return (
+//     <>
+//       <Header />
+//       <main>{children}</main>
+//     </>
+//   )
+// }
